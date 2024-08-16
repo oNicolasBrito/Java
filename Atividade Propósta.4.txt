@@ -1,0 +1,75 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.exercicio_proposto4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Exercicio_proposto4 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int codigo;
+        float preco = 0.0f;
+        int quantidade = 0;
+        
+        
+        System.out.println("CODIGO //////// ESPECIFICACAO //////// PRECO \n");
+        System.out.println("\n");
+        System.out.println("1               Cachorro quente        RS 4.00  \n");
+        System.out.println("2               X-Salada               RS 4.50  \n");
+        System.out.println("3               X-Bacon                RS 5.00  \n");
+        System.out.println("4               Torrada Simples        RS 2.00  \n");
+        System.out.println("5               Refrigerante           RS 1.50  \n");
+        System.out.println("\n");
+        
+        System.out.println("Digite um codigo:\n");
+        codigo = sc.nextInt();
+        
+        System.out.println("Digite a quantidade:\n");
+        quantidade = sc.nextInt();
+        
+        if (codigo == 1) {
+        
+            preco = 4 * quantidade;
+            System.out.printf("Valor a pagar: RS%.2f\n",preco);
+            
+        } else if (codigo == 2) {
+            
+            preco = 4.5f * quantidade;
+            System.out.printf("Valor a pagar: RS%.2f\n",preco);
+            
+        } else if (codigo == 3) {
+            
+            preco = 5 * quantidade;
+            System.out.printf("Valor a pagar: RS%.2f\n",preco);
+            
+        } else if (codigo == 4) {
+            
+            preco = 2 * quantidade;
+            System.out.printf("Valor a pagar: RS%.2f\n",preco);
+            
+        } else if (codigo == 5) {
+            
+         preco = 1.5f * quantidade;
+         System.out.printf("Valor a pagar: RS%.2f\n",preco);
+         
+        } else {
+            
+            System.out.println("Codigo inválido!\n");
+
+        }
+        }
+        
+        
+        
+        
+    }
